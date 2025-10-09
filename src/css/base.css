@@ -1,8 +1,13 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   /* font-size: 16px;
   line-height: 1.6;
   font-weight: 400; */
   color: #030a06;
   background-color: #ebf8ed;
 }
+
+/* h1, h2 {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+} */
