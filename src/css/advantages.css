@@ -115,7 +115,6 @@
 
     .advantages-item {
         flex: 1 1 calc(50% - 12px);
-        outline: 1px red;
     }
 
     .advantages-item-wide {
@@ -129,9 +128,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .subtitle-advantages {
-        /* margin-bottom: 16px; */
-    }
 
     .advantages-header {
         text-align: left;
