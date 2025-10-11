@@ -4,19 +4,19 @@
     gap: 12px;
 }
 
-.section-title {
+.advantages-title {
     margin-bottom: 20px;
     font-family: "Comfortaa", sans-serif;
 }
 
-.subtitle-advantages {
+.advantages-subtitle {
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
     color: #030a06;
 }
 
-.title-text {
+.advantages-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
@@ -34,12 +34,7 @@
     margin-bottom: 8px;
 }
 
-.img-advant {
-    width: 704px;
-    height: 416px;
-}
-
-.subtitle-card {
+.advantages-card-subtitle {
     font-family: "Comfortaa", sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -49,7 +44,8 @@
     margin-bottom: 8px;
 }
 
-.subtitle-card-text {
+.advantages-card-text {
+    color: #030a06;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
@@ -70,11 +66,11 @@
         gap: 16px;
     }
 
-    .section-title {
+    .advantages-title {
         margin-bottom: 24px;
     }
 
-    .title-text {
+    .advantages-text {
         text-align: left;
         font-size: 18px;
         margin-bottom: 32px;
@@ -109,7 +105,7 @@
         display: block;
     }
     
-    .card-two {
+    .advantages-card-two {
         margin-bottom: 42px;
     }
 
@@ -134,7 +130,7 @@
     }
 
 
-    .title-text {
+    .advantages-text {
         margin-bottom: 80px;
         width: 768px;
     }
@@ -150,7 +146,7 @@
         flex: 1 1 calc(100% - 48px / 3);
     }
 
-    .subtitle-card {
+    .advantages-card-subtitle {
         margin-bottom: 24px;
         font-weight: 700;
         font-size: 32px;
