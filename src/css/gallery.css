@@ -1,3 +1,96 @@
-.gallery {
-  background-color: #e7b8fa;
+/* Styles - Gallary */
+
+/* h2 Section title */
+.gallery-title {
+  text-align: center;
+  margin-bottom: 16px;
 }
+
+@media only screen and (min-width: 768px) {
+  .gallery-title {
+    margin-bottom: 24px;
+  }
+}
+
+.gallery-text {
+  /* font-family: 'Fira Sans', sans-serif; */
+  font-weight: 400;
+  font-size: 18px;
+  /* line-height: 1.6; */
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.gallery-img source,
+.gallery-img img {
+  /* display: block; */
+  /* width: 100%; */
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+.gallery-item.img-1 {
+  /* Задаємо назву елементу для розміщення в сітці */
+  grid-area: img-1;
+}
+
+.gallery-item.img-2 {
+  /* Задаємо назву елементу для розміщення в сітці */
+  grid-area: img-2;
+}
+
+.gallery-item.img-3 {
+  /* Задаємо назву елементу для розміщення в сітці */
+  grid-area: img-3;
+}
+
+.gallery-item.img-4 {
+  /* Задаємо назву елементу для розміщення в сітці */
+  grid-area: img-4;
+}
+
+.gallery-picture {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Galary - Tablet */
+@media only screen and (min-width: 768px) {
+  .gallery-picture {
+    /* Призначаємо сітку */
+    display: grid;
+    /* Робимо 2 однакові стовпчики */
+    grid-template-columns: repeat(2, 1fr);
+    /* Робимо 3 однакові строки */
+    grid-template-rows: repeat(3, 1fr);
+    /* Встановлюємо відступи між елементами */
+    gap: 24px;
+    /* Робимо макет розміщення елементів */
+    grid-template-areas:
+    "img-4 img-2"
+    "img-3 img-2"
+    "img-3 img-1";
+  }
+}
+
+/* Galary - Desktop  */
+@media only screen and (min-width: 1440px) {
+  .gallery-picture {
+    /* Призначаємо сітку */
+    display: grid;
+    /* Робимо 3 однакові стовпчики */
+    grid-template-columns: repeat(3, 1fr);
+    /* Робимо 2 однакові строки */
+    grid-template-rows: repeat(2, 1fr);
+    /* Встановлюємо відступи між елементами */
+    gap: 24px;
+    /* Робимо макет розміщення елементів */
+    grid-template-areas:
+    "img-4 img-2 img-3"
+    "img-1 img-2 img-3";
+  }
+}
+
+
