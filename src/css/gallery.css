@@ -1,8 +1,6 @@
-.gallery {
-  background-color: #ebf8ed;
-}
+/* Styles - Gallary */
 
-/* h2 section title */
+/* h2 Section title */
 .gallery-title {
   text-align: center;
   margin-bottom: 16px;
@@ -13,7 +11,6 @@
     margin-bottom: 24px;
   }
 }
-/* ========================================= */
 
 .gallery-text {
   /* font-family: 'Fira Sans', sans-serif; */
@@ -25,27 +22,12 @@
   margin-bottom: 32px;
 }
 
-/* Galary - Mobile */
-.gallery-mobile {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.gallery-tablet {
-  display: none;
-}
-
-.gallery-desktop {
-  display: none;
-}
-
-.gallery-img {
-  display: block;
-  width: 100%;
-  /* height: 100%; */
-  object-fit: cover;
+.gallery-img source,
+.gallery-img img {
+  /* display: block; */
+  /* width: 100%; */
   border-radius: 32px;
+  object-fit: cover;
 }
 
 .gallery-item.img-1 {
@@ -68,12 +50,15 @@
   grid-area: img-4;
 }
 
+.gallery-picture {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 /* Galary - Tablet */
 @media only screen and (min-width: 768px) {
-  .gallery-mobile {
-    display: none;
-  }
-  .gallery-tablet {
+  .gallery-picture {
     /* Призначаємо сітку */
     display: grid;
     /* Робимо 2 однакові стовпчики */
@@ -88,22 +73,11 @@
     "img-3 img-2"
     "img-3 img-1";
   }
-
-  .gallery-desktop {
-  display: none;
-  }
-
 }
 
 /* Galary - Desktop  */
 @media only screen and (min-width: 1440px) {
-  .gallery-mobile {
-    display: none;
-  }
-  .gallery-tablet {
-    display: none;
-  }
-  .gallery-desktop {
+  .gallery-picture {
     /* Призначаємо сітку */
     display: grid;
     /* Робимо 3 однакові стовпчики */
@@ -117,7 +91,6 @@
     "img-4 img-2 img-3"
     "img-1 img-2 img-3";
   }
-
 }
 
 
