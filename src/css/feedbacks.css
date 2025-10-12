@@ -7,17 +7,6 @@
   margin-bottom: 32px;
 }
 
-@media only screen and (min-width: 1440px) {
-  .feedbacks-title {
-    width: 560px;
-    margin-bottom: 80px;
-    /* Вирівнювання по центру */
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/* Текст відгуку */
 .feedback-text {
   font-family: 'Comfortaa', sans-serif;
   font-size: 20px;
@@ -26,59 +15,25 @@
   letter-spacing: 0.01em;
 }
 
-/* Автор відгуку */
 .feedback-author {
-  /* font-family: 'Fira Sans', sans-serif; */
   font-size: 16px;
   font-weight: 600;
-  /* line-height: 1.6; */
   letter-spacing: 0em;
 }
 
-/* Перелік відгуків */
 .feedback-list {
   display: flex;
   flex-direction: column;
-  /* Відстань між відгуками */
   row-gap: 40px;
 }
 
-@media only screen and (min-width: 768px) {
-  .feedback-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* Відстань між відгуками */
-    row-gap: 32px;
-    column-gap: 24px;
-  }
-}
-
-/* Блок з одним відгуком */
 .feedback-item {
   flex-basis: 100%;
   display: flex;
   flex-direction: column;
-  /* Відстань між елементами відгука */
   gap: 12px;
 }
 
-@media only screen and (min-width: 768px) {
-  .feedback-item {
-    /* Ширина 1 відгуку */
-    flex-basis: calc((100% - 24px) / 2);
-    /* Відстань між елементами відгука */
-    gap: 24px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .feedback-item {
-    /* Ширина 1 відгуку */
-    flex-basis: calc((100% - 3 * 24px) / 4);
-  }
-}
-
-/* Блок з зірочками - рівнями */
 .star-list {
   padding: 2px;
   display: flex;
@@ -88,4 +43,29 @@
 
 .star-icon {
   fill: #3ac04c;
+}
+
+@media screen and (min-width: 768px) {
+  .feedback-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    column-gap: 24px;
+  }
+  .feedback-item {
+    flex-basis: calc((100% - 24px) / 2);
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .feedbacks-title {
+    width: 560px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .feedback-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
 }
