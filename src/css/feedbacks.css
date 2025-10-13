@@ -34,6 +34,12 @@
   gap: 12px;
 }
 
+.star-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .star-list {
   padding: 2px;
   display: flex;
@@ -56,6 +62,9 @@
     flex-basis: calc((100% - 24px) / 2);
     gap: 24px;
   }
+  .star-text {
+    gap: 24px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -67,5 +76,6 @@
   }
   .feedback-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
+    justify-content: space-between;
   }
 }
