@@ -1,3 +1,134 @@
+/* footer */
 .footer {
   background-color: #75d281;
+}
+
+.footer-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* Logo */
+.logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  fill: #030a06;
+  display: block;
+  width: 281px;
+  height: 121px;
+}
+
+/* footer Main content */
+.footer-content {
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  align-items: center;
+}
+
+/* Menu footer navigation */
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.nav-link {
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+
+/* Menu footer social */
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.social-link {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  display: block;
+  fill: #030a06;
+}
+
+/* footer - information */
+.footer-info {
+  border-top: 1px solid rgba(3, 10, 6, 0.15);
+  padding-top: 24px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  align-items: center;
+}
+
+.footer-address {
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+/* copyright */
+.copyright-text {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    width: 164px;
+    height: 70px;
+  }
+  .footer-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .footer-content {
+    margin-bottom: 24px;
+    row-gap: 32px;
+  }
+  .footer-menu {
+    flex-direction: row;
+    column-gap: 32px;
+  }
+  .footer-info {
+    padding-top: 16px;
+    padding-bottom: 0px;
+    row-gap: 16px;
+  }
+  .footer-address {
+    flex-direction: row;
+    column-gap: 32px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .footer-content {
+    margin-bottom: 52px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
