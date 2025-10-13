@@ -1,4 +1,7 @@
 /* footer */
+.footer {
+  background-color: #75d281;
+}
 
 .footer-container {
   padding-top: 48px;
@@ -14,6 +17,7 @@
 
 .footer-logo {
   fill: #030a06;
+  display: block;
   width: 281px;
   height: 121px;
 }
@@ -56,6 +60,7 @@
 }
 
 .social-icon {
+  display: block;
   fill: #030a06;
 }
 
