@@ -9,40 +9,32 @@
       </p>
       <button class="button hero-btn" type="button">Купити зараз</button>
     </div>
-    <ul class="hero-img-list">
-      <li class="hero-img-item">
-        <img
-          class="hero-img-mob"
-          src="/img/hero-img/hero-img-mob.jpg"
-          srcset="
-            /img/hero-img/hero-img-mob.jpg    1x,
-            /img/hero-img/hero-img-mob-2x.jpg 2x
-          "
-          alt="Стильні різнокольорові сумки з екологічних матеріалів"
-        />
-      </li>
-      <li class="hero-img-item">
-        <img
-          class="hero-img-tab"
-          src="/img/hero-img/hero-img-tab.jpg"
-          srcset="
-            /img/hero-img/hero-img-tab.jpg    1x,
-            /img/hero-img/hero-img-tab-2x.jpg 2x
-          "
-          alt="Стильні різнокольорові сумки з екологічних матеріалів"
-        />
-      </li>
-      <li class="hero-img-item">
-        <img
-          class="hero-img-desk"
-          src="/img/hero-img/hero-img-desk.jpg"
-          srcset="
-            /img/hero-img/hero-img-desk.jpg    1x,
-            /img/hero-img/hero-img-desk-2x.jpg 2x
-          "
-          alt="Стильні різнокольорові сумки з екологічних матеріалів"
-        />
-      </li>
-    </ul>
+    <picture class="hero-picture">
+      <source
+        srcset="
+          /img/hero-img/hero-img-desk.jpg    1x,
+          /img/hero-img/hero-img-desk-2x.jpg 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="
+          /img/hero-img/hero-img-tab.jpg    1x,
+          /img/hero-img/hero-img-tab-2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          /img/hero-img/hero-img-mob.jpg    1x,
+          /img/hero-img/hero-img-mob-2x.jpg 2x
+        "
+        media="(min-width: 320px)"
+      />
+      <img
+        src="/img/hero-img/hero-img-mob.jpg"
+        alt="Стильні різнокольорові сумки з екологічних матеріалів"
+      />
+    </picture>
   </div>
 </section>
