@@ -1,37 +1,84 @@
 .hero {
-  background-color: #ebf8ed;
-  padding: 64px 0;
-
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
-.hero-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+.hero-text-content-wrapper {
+  margin-bottom: 24px;
 }
 
 .hero-title {
-  font-size: 40px;
+  font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
+  font-size: 40px;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  color: #030a06;
   margin-bottom: 20px;
 }
 
-.hero-btn-text {
+.hero-text {
   margin-bottom: 24px;
-  color: #030a06;
 }
+
+.img-wrapper {
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 32px;
+  }
+
+  .hero-text-content-wrapper {
+    display: flex;
+    gap: 24;
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    max-width: 340px;
+    margin-bottom: 0;
+  }
+
+  .hero-content-btn-container {
+    max-width: 340px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-title {
+    max-width: 640px;
+    font-size: 56px;
+  }
+
+  .hero-text-content-wrapper {
+    gap: 32px;
+  }
+
+  .hero-content-btn-container {
+    max-width: 640px;
+  }
+}
+
+/* btn */
 
 .hero-btn {
   padding: 12px 0;
+  text-align: center;
   border: 1px solid #030a06;
   background-color: #030a06;
   color: #fff;
   width: 288px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:active {
@@ -40,57 +87,13 @@
   opacity: 0.6;
 }
 
-.hero-btn-container {
-  margin-bottom: 24px;
-}
-
-
-
-.hero-picture {
-  border-radius: 40px;
-  overflow: hidden;
-}
-
-/*---------------MEDIA------------*/
-
 @media screen and (min-width: 768px) {
-
-  .hero {
-    padding-top: 32px;
-  }
-
-  .hero-title {
-    max-width: 340px;
-    margin-right: 24px;
-    margin-bottom: 20px;
-  }
-
-  .hero-btn-text {
-    max-width: 340px;
-    font-size: 18px;
-    margin-bottom: 32px;
-  }
-
   .hero-btn {
     width: 148px;
-  }
-
-  .hero-btn-container {
-    margin-bottom: auto;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .hero-title {
-    font-size: 56px;
-    max-width: 640px;
-    margin-right: 32px;
-  }
-
-  .hero-btn-text {
-    max-width: 640px;
-  }
-
   .hero-btn:focus {
     outline: none;
     opacity: 0.5;
