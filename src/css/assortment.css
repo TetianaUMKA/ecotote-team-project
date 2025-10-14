@@ -4,7 +4,6 @@
   background: #ebf8ed;
 }
 
-
 .assortment-container {
   display: flex;
   align-items: center;
@@ -12,18 +11,10 @@
   flex-direction: column;
 }
 
-
 .assortment-title {
-  font-family: "Comfortaa", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
   text-align: center;
-  color: #030a06;
   margin-bottom: 32px;
 }
-
 
 .assortment-list {
   display: flex;
@@ -31,21 +22,16 @@
   gap: 40px;
 }
 
-
-.assortment-img {
-  width: 288px;
-  height: 345px;
+.assortment-picture {
   margin-bottom: 16px;
-  align-items: center;
   border-radius: 32px;
+  overflow: hidden;
 }
-
 
 .assortment-subtitle-text {
   text-align: center;
   margin-bottom: 16px;
 }
-
 
 .assortment-subtitle {
   font-weight: 600;
@@ -54,7 +40,6 @@
   text-align: center;
   color: #030a06;
 }
-
 
 .assortment-text {
   font-weight: 400;
@@ -65,44 +50,31 @@
   margin-bottom: 8px;
 }
 
-
 .assortment-price {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.6;
   text-align: center;
   color: #030a06;
-
-
 }
-
 
 .assortment-btn {
-  border: 1px solid #030a06;
-  background-color: transparent;
-  border-radius: 6px;
-  padding: 8px 20px;
   width: 288px;
   height: 40px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
+  padding: 8px 20px;
+  border: 1px solid #030a06;
+  background-color: transparent;
   color: #030a06;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.assortment-btn:hover {
-  background: #113916;
-  color: #fff;
+.assortment-btn:active {
+  border: 1px solid #113916;
+  color: #113916;
+  opacity: 0.6;
 }
-
-
-.assortment-btn:focus {
-  background: #113916;
-  color: #fff;
-}
-
 
 @media screen and (min-width: 768px) {
   .assortment {
@@ -110,12 +82,9 @@
     padding-bottom: 64px;
   }
 
-
-
   .assortment-list {
     gap: 24px;
   }
-
 
   .assortment-item {
     display: flex;
@@ -123,62 +92,50 @@
     width: calc((100% - 24px) / 2);
   }
 
-
   .assortment-img {
     width: 340px;
     height: 408px;
   }
 
-
   .assortment-subtitle-text {
     width: 340px;
   }
-
 
   .assortment-btn {
     margin-top: auto;
     width: 340px;
   }
-
-
 }
 
-
 @media screen and (min-width: 1440px) {
-
-
-
-
   .assortment-title {
     font-size: 48px;
   }
 
-
   .assortment-list {
     gap: 64px 24px;
   }
-
 
   .assortment-item {
     width: 310px;
     width: calc((100% - 3 * 24px) / 4);
   }
 
-
   .assortment-img {
     width: 310px;
     height: 371px;
   }
 
-
   .assortment-subtitle-text {
     width: 310px;
   }
-
 
   .assortment-btn {
     width: 310px;
   }
 
-
+  .assortment-btn:hover,
+  .assortment-btn:focus {
+    opacity: 0.5;
+  }
 }
