@@ -1,5 +1,5 @@
 .header {
-  background-color: #75D281;
+  background-color: #75d281;
 }
 .container-header {
   display: flex;
@@ -8,7 +8,6 @@
   padding-right: 20px;
   padding-left: 20px;
   width: 100%;
-  
 }
 .header-logo {
   margin-top: 14px;
@@ -16,8 +15,8 @@
   display: flex;
 }
 
-.header-logo-icon{
-  fill: #333333;
+.header-logo-icon {
+  fill: #030a06;
 }
 
 .nav-list,
@@ -36,15 +35,19 @@
   padding: 0;
 }
 
+.burger {
+  fill: #030a06;
+}
+
 /* --------menu window ------ */
-@media (min-width: 320px)  {
+@media (min-width: 320px) {
   .burger-menu-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #75D281;
+    background-color: #75d281;
     z-index: 9999;
     display: none;
     flex-direction: column;
@@ -65,7 +68,6 @@
     width: 320px;
     padding: 14px 20px 92px 20px;
   }
-
 
   .burger-menu-close {
     position: absolute;
@@ -103,7 +105,7 @@
     font-style: normal;
   }
 
-  .burger-contact-list{
+  .burger-contact-list {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
@@ -119,15 +121,15 @@
   }
 
   .burger-menu {
-     box-sizing: border-box;
+    box-sizing: border-box;
   }
-  
+
   .menu-open-btn {
     width: 24px;
     height: 24px;
   }
 
- .burger-menu {
+  .burger-menu {
     width: 768px;
     padding: 14px 32px 128px 32px;
   }
@@ -135,11 +137,10 @@
   .burger-menu-close {
     right: 24px;
   }
-  
+
   .burger-nav {
     width: 768px;
   }
-  
 }
 /* ------------------------Desktop Styles --------------------- */
 @media (min-width: 1440px) {
@@ -151,13 +152,13 @@
     padding-right: 64px;
   }
 
-  
   .menu-open-btn,
   .burger-menu-overlay {
     display: none;
   }
-  
-  .nav-list, .contacts {
+
+  .nav-list,
+  .contacts {
     display: flex;
   }
 
@@ -167,7 +168,7 @@
     margin-right: auto;
   }
 
-  .header-logo-icon{
+  .header-logo-icon {
     width: 104px;
     height: 39px;
   }
@@ -191,23 +192,23 @@
   .nav-link:hover,
   .nav-link:focus,
   .contacts-link:hover,
-  .contacts-link:focus{
+  .contacts-link:focus {
     border-bottom: 1px solid #030a06;
   }
 
   .nav-link:active,
-  .contacts-link:active{
-    color: #3ac04c;;
-    border-bottom: 1px solid #3ac04c;;
+  .contacts-link:active {
+    color: #3ac04c;
+    border-bottom: 1px solid #3ac04c;
   }
-  
+
   .contacts {
     display: flex;
     flex-shrink: 0;
     align-items: center;
     margin-left: auto;
   }
-  
+
   .contacts-list {
     width: 290px;
     display: flex;
@@ -218,5 +219,4 @@
   .burger-menu {
     display: none;
   }
-
 }
