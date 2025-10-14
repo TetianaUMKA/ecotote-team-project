@@ -1,36 +1,56 @@
-<section class="support">
+<section class="support" id="support">
   <div class="container">
     <div class="support-form-section">
       <h2 class="section-title">Залишились питання? Зв'яжіться з нами!</h2>
-      <p class="section-subtitle support-section-subtitle">Ми тут, щоб допомогти!</p>
+      <p class="section-subtitle support-section-subtitle">
+        Ми тут, щоб допомогти!
+      </p>
       <form action="" class="support-form">
         <label for="user-name">
           Ім'я
           <div class="input-wrapper-container">
-            <input class="input" type="text" name="name" id="user-name" placeholder="Іван" minlength="5" maxlength="64">
+            <input
+              class="input"
+              type="text"
+              name="name"
+              id="user-name"
+              placeholder="Іван"
+              minlength="5"
+              maxlength="64"
+            />
           </div>
         </label>
         <label for="user-email">
           Електронна пошта
           <div class="input-wrapper-container">
-            <input class="input" type="email" name="email" id="user-email" placeholder="hello@ecotote.com"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="user-email"
+              placeholder="hello@ecotote.com"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
             <p class="input-text-invalid">Invalid email, try again</p>
           </div>
         </label>
         <label for="user-comment">
           Повідомлення
           <div class="input-wrapper-container">
-            <textarea class="input-textarea" name="message" id="user-comment" placeholder="Введіть своє повідомлення..."
-              maxlength="500"></textarea>
+            <textarea
+              class="input-textarea"
+              name="message"
+              id="user-comment"
+              placeholder="Введіть своє повідомлення..."
+              maxlength="500"
+            ></textarea>
           </div>
         </label>
 
         <button type="submit" class="button support-button">Надіслати</button>
       </form>
     </div>
-    <div class="support-bg-img">
-
-    </div>
+    <div class="support-bg-img"></div>
   </div>
 </section>
