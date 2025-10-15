@@ -32,7 +32,7 @@
 
   .hero-text-content-wrapper {
     display: flex;
-    gap: 24;
+    justify-content: space-between;
     margin-bottom: 20px;
   }
 
@@ -55,10 +55,6 @@
   .hero-title {
     max-width: 640px;
     font-size: 56px;
-  }
-
-  .hero-text-content-wrapper {
-    gap: 32px;
   }
 
   .hero-content-btn-container {
