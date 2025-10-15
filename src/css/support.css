@@ -25,7 +25,7 @@
 .support-form textarea::placeholder {
   color: rgba(3, 10, 6, 0.6);
 }
-.support-form input[type='email']:not(:placeholder-shown):invalid {
+.support-form input:not(:placeholder-shown):invalid {
   outline: 1px solid rgba(214, 64, 64, 1);
   color: rgba(214, 64, 64, 1);
 }
@@ -45,7 +45,6 @@
   color: #ffffff;
   border: none;
   background-color: #030a06;
-  border: none;
 }
 .support-button:hover {
   background-color: rgba(3, 10, 6, 0.5);
