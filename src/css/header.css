@@ -1,3 +1,222 @@
 .header {
   background-color: #75d281;
 }
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 100%;
+}
+.header-logo {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  display: flex;
+}
+
+.header-logo-icon {
+  fill: #030a06;
+}
+
+.nav-list,
+.contacts {
+  display: none;
+}
+
+.menu-open-btn {
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.burger-icon {
+  fill: #030a06;
+}
+
+/* --------menu window ------ */
+@media (min-width: 320px) {
+  .burger-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #75d281;
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .burger-menu-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    display: flex;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 320px;
+    padding: 14px 20px 92px 20px;
+  }
+
+  .burger-menu-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background-color: transparent;
+    padding: 0;
+    fill: black;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .burger-nav {
+    width: 280px;
+    margin-top: 32px;
+  }
+
+  .burger-nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 88px;
+    height: 316px;
+    row-gap: 32px;
+  }
+
+  .burger-contact {
+    padding-top: 32px;
+    margin-top: auto;
+    font-style: normal;
+  }
+
+  .burger-contact-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 158px;
+    height: 68px;
+  }
+}
+/* ------------------------Tablet Styles --------------------- */
+@media (min-width: 768px) {
+  .container-header {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .burger-menu {
+    box-sizing: border-box;
+  }
+
+  .menu-open-btn {
+    width: 24px;
+    height: 24px;
+  }
+
+  .burger-menu {
+    width: 768px;
+    padding: 14px 32px 128px 32px;
+  }
+
+  .burger-menu-close {
+    right: 24px;
+  }
+
+  .burger-nav {
+    width: 768px;
+  }
+}
+/* ------------------------Desktop Styles --------------------- */
+@media (min-width: 1440px) {
+  .container-header {
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .menu-open-btn,
+  .burger-menu-overlay {
+    display: none;
+  }
+
+  .nav-list,
+  .contacts {
+    display: flex;
+  }
+
+  .header-logo {
+    width: 104px;
+    height: 39px;
+    margin-right: auto;
+  }
+
+  .header-logo-icon {
+    width: 104px;
+    height: 39px;
+  }
+
+  .header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    padding: 0;
+  }
+
+  .nav-list {
+    width: 566px;
+    display: flex;
+    gap: 32px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus,
+  .contacts-link:hover,
+  .contacts-link:focus {
+    border-bottom: 1px solid #030a06;
+  }
+
+  .nav-link:active,
+  .contacts-link:active {
+    color: #3ac04c;
+    border-bottom: 1px solid #3ac04c;
+  }
+
+  .contacts {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .contacts-list {
+    width: 290px;
+    display: flex;
+    gap: 16px;
+    font-style: normal;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
