@@ -1,4 +1,3 @@
-/* footer */
 .footer {
   background-color: #75d281;
 }
@@ -8,7 +7,6 @@
   padding-bottom: 48px;
 }
 
-/* Logo */
 .logo-link {
   margin: 0;
   padding: 0;
@@ -24,7 +22,6 @@
   height: 121px;
 }
 
-/* footer Main content */
 .footer-content {
   margin-bottom: 48px;
   display: flex;
@@ -33,14 +30,12 @@
   align-items: center;
 }
 
-/* Menu footer navigation */
 .footer-menu {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
 }
 
-/* Menu footer social */
 .footer-social {
   display: flex;
   flex-direction: row;
@@ -61,7 +56,6 @@
   fill: #030a06;
 }
 
-/* Social link */
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   outline: 1px solid #030a06;
@@ -74,7 +68,6 @@
   fill: #3ac04c;
 }
 
-/* footer - information */
 .footer-info {
   border-top: 1px solid rgba(3, 10, 6, 0.15);
   padding-top: 24px;
@@ -94,7 +87,6 @@
   row-gap: 16px;
 }
 
-/* copyright */
 .copyright-text {
   font-size: 14px;
   font-weight: 400;
