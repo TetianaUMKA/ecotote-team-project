@@ -39,81 +39,78 @@
   fill: #030a06;
 }
 
-/* --------menu window ------ */
-@media (min-width: 320px) {
-  .burger-menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #75d281;
-    z-index: 9999;
-    display: none;
-    flex-direction: column;
-    box-sizing: border-box;
-  }
-
-  .burger-menu-overlay.is-open {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    display: flex;
-  }
-
-  .burger-menu {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 320px;
-    padding: 14px 20px 92px 20px;
-  }
-
-  .burger-menu-close {
-    position: absolute;
-    top: 16px;
-    right: 20px;
-    background-color: transparent;
-    padding: 0;
-    fill: black;
-    width: 32px;
-    height: 32px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-  }
-
-  .burger-nav {
-    width: 280px;
-    margin-top: 32px;
-  }
-
-  .burger-nav-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 88px;
-    height: 316px;
-    row-gap: 32px;
-  }
-
-  .burger-contact {
-    padding-top: 32px;
-    margin-top: auto;
-    font-style: normal;
-  }
-
-  .burger-contact-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-    width: 158px;
-    height: 68px;
-  }
+.burger-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #75d281;
+  z-index: 9999;
+  display: none;
+  flex-direction: column;
+  box-sizing: border-box;
 }
-/* ------------------------Tablet Styles --------------------- */
+
+.burger-menu-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  display: flex;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 320px;
+  padding: 14px 20px 92px 20px;
+}
+
+.burger-menu-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background-color: transparent;
+  padding: 0;
+  fill: black;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.burger-nav {
+  width: 280px;
+  margin-top: 32px;
+}
+
+.burger-nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 88px;
+  height: 316px;
+  row-gap: 32px;
+}
+
+.burger-contact {
+  padding-top: 32px;
+  margin-top: auto;
+  font-style: normal;
+}
+
+.burger-contact-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  width: 158px;
+  height: 68px;
+}
+
 @media (min-width: 768px) {
   .container-header {
     padding-right: 32px;
@@ -142,7 +139,7 @@
     width: 768px;
   }
 }
-/* ------------------------Desktop Styles --------------------- */
+
 @media (min-width: 1440px) {
   .container-header {
     max-width: 1440px;
