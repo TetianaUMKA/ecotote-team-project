@@ -71,7 +71,10 @@
   }
 
   .about-subtitle {
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 24px;
+    max-width: 629px;
   }
 
   .about-text {
